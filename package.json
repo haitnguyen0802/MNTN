@@ -12,7 +12,7 @@
   "author": "Tran Nghia CFD Circle",
   "license": "ISC",
   "devDependencies": {
-    "grunt": "^1.2.1",
+    "grunt": "^1.6.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-sass": "^1.0.0",
