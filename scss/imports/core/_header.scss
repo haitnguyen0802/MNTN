@@ -1,1 +1,103 @@
 // css header
+header {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    .header-top {
+        padding: 0 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .menu {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 32px;
+
+                li {
+                    a {
+                        font-family: "ir";
+                        font-size: 16px;
+                        color: #ffffff;
+                        text-decoration: none;
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: 2px;
+                            background-color: #ffffff;
+                            position: absolute;
+                            bottom: -6px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            transition: width 0.25s ease-in-out;
+                        }
+
+                        &:hover::before {
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .account {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            position: relative;
+
+            img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+            }
+
+            a {
+                color: #ffffff;
+                font-family: "im";
+                font-size: 16px;
+                text-decoration: none;
+                position: relative;
+                height: 24px;
+
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+                background-color: #ffffff;
+                position: absolute;
+                bottom: -6px;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: width 0.25s ease-in-out;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+        }
+    }
+}

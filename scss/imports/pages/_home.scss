@@ -1,8 +1,69 @@
-// CSS HOMEPAGE
-// Ví dụ
-.schero {
-    height: 100vh;
+.hero {
+    height: 250vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    // background: linear-gradient(to bottom,
+    //         rgba(11, 29, 38, 0) 0%,
+    //         rgba(11, 29, 38, 1) 100%);
+    z-index: 100;
+    position: relative;
+
+    // &::before {
+    //     content: "";
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: linear-gradient(to bottom, rgba(11, 29, 38, 0) 0%, rgba(11, 29, 38, 1) 100%);
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 100;
+    // }
+
+    .hero-content {
+        height: 100%;
+        z-index: 0;
+
+        .hero-content-top {
+
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .hero-content-center {
+            position: absolute;
+            top: 50%;
+            margin-top: 44%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .hero-content-bottom {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            margin-top: 104.9%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .hero-content-contact {}
+
+        .hero-content-flow {}
+    }
 }
