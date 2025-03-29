@@ -67,3 +67,122 @@
         .hero-content-flow {}
     }
 }
+
+/* Toàn Pro Vip - Start Code*/
+.layout-section {
+    background-color: #0F172A;
+    color: white;
+    margin-top: 100px;
+    padding: 60px;
+    // border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.layout-section__container {
+    display: flex;
+    align-items: center;
+}
+
+/* Element */
+.layout-section__background-number {
+    font-size: 120px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 0;
+}
+
+.layout-section__subtitle {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #FFD700;
+}
+
+.layout-section__title {
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 40px;
+    z-index: 10;
+}
+
+.layout-section__description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+.layout-section__link {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.layout-section__link:hover {
+    text-decoration: underline;
+}
+
+/* Modifier */
+.layout-section__image img {
+    width: 450px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Block */
+.info-box {
+    background-color: #0F172A;
+    padding: 20px 40px;
+    position: relative;
+    top: -30px;
+    left: -36px;
+}
+
+/* Wrapper */
+.info-box__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Số 03 */
+.info-box__background-number {
+    font-size: 158px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: -100px;
+    top: 40px;
+}
+
+/* Dòng chữ */
+.info-box__subtitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FFD700;
+    top: 39px;
+    left: -64px;
+    font-family: "Arial", sans-serif;
+    position: relative;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+/* Gạch ngang */
+.info-box__line {
+    display: inline-block;
+    width: 48px;
+    height: 1px;
+    background-color: #FFD700;
+    margin-right: 10px;
+}
+
+/* Toàn Pro Vip - End Code */
