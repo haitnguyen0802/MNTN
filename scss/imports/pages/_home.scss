@@ -2,9 +2,9 @@
     height: 250vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to bottom,
-            rgba(11, 29, 38, 0) 0%,
-            rgba(11, 29, 38, 1) 100%);
+    // background: linear-gradient(to bottom,
+    //         rgba(11, 29, 38, 0) 0%,
+    //         rgba(11, 29, 38, 1) 100%);
     z-index: 100;
     position: relative;
 
@@ -25,7 +25,6 @@
         z-index: 0;
 
         .hero-content-top {
-
             position: absolute;
             top: 0;
             width: 100%;
@@ -62,15 +61,16 @@
             }
         }
 
-        .hero-content-contact {}
+        .hero-content-contact {
+        }
 
-        .hero-content-flow {}
+        .hero-content-flow {
+        }
     }
 }
-
 /* Toàn Pro Vip - Start Code*/
 .layout-section {
-    background-color: #0F172A;
+    background-color: #0f172a;
     color: white;
     margin-top: 100px;
     padding: 60px;
@@ -100,12 +100,12 @@
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #FFD700;
+    color: #ffd700;
 }
 
 .layout-section__title {
     font-size: 32px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: bold;
     line-height: 40px;
     z-index: 10;
@@ -118,7 +118,7 @@
 }
 
 .layout-section__link {
-    color: #FFD700;
+    color: #ffd700;
     font-weight: bold;
     text-decoration: none;
 }
@@ -137,7 +137,7 @@
 
 /* Block */
 .info-box {
-    background-color: #0F172A;
+    background-color: #0f172a;
     padding: 20px 40px;
     position: relative;
     top: -30px;
@@ -166,7 +166,7 @@
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #FFD700;
+    color: #ffd700;
     top: 39px;
     left: -64px;
     font-family: "Arial", sans-serif;
@@ -181,8 +181,94 @@
     display: inline-block;
     width: 48px;
     height: 1px;
-    background-color: #FFD700;
+    background-color: #ffd700;
     margin-right: 10px;
 }
 
 /* Toàn Pro Vip - End Code */
+/* Minh Pro Vip - Start Code*/
+// services-section
+.services-section {
+    background-color: #0a1d26;
+    color: #fff;
+    width: 100%;
+    .title {
+        width: 600px;
+        margin: 165px auto 130px;
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 58px;
+        }
+        p {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .group-img {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        .img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .img1 {
+            grid-area: 1 / 1 / 2 / 5;
+        }
+        .img2 {
+            grid-area: 1 / 5 / 2 / 9;
+        }
+        .img3 {
+            grid-area: 1 / 9 / 2 / 13;
+        }
+        .img4 {
+            grid-area: 2 / 1 / 3 / 4;
+        }
+        .img5 {
+            grid-area: 2 / 4 / 3 / 8;
+        }
+        .img6 {
+            grid-area: 2 / 8 / 3 / 13;
+        }
+    }
+}
+/* // footer */
+footer {
+    background-color: #0a1d26;
+    color: #fff;
+    padding: 214px 0 40px;
+    .footer_group {
+        p {
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        h4 {
+            font-size: 18px;
+            color: #fbd784;
+        }
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+    }
+
+    .footer__info {
+        grid-area: 1 / 2 / 2 / 6;
+        .footer_item {
+            padding-top: 106px;
+        }
+    }
+    .footer__section--1 {
+        grid-area: 1 / 8 / 2 / 11;
+    }
+    .footer__section--2 {
+        grid-area: 1 / 11 / 2 / 13;
+    }
+}
+/* Minh Pro Vip - End Code */

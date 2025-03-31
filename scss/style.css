@@ -2283,7 +2283,7 @@ header .header-top .account:hover::before {
 }
 /* Toàn Pro Vip - Start Code*/
 .layout-section {
-  background-color: #0F172A;
+  background-color: #0f172a;
   color: white;
   margin-top: 100px;
   padding: 60px;
@@ -2312,7 +2312,7 @@ header .header-top .account:hover::before {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #FFD700;
+  color: #ffd700;
 }
 
 .layout-section__title {
@@ -2330,7 +2330,7 @@ header .header-top .account:hover::before {
 }
 
 .layout-section__link {
-  color: #FFD700;
+  color: #ffd700;
   font-weight: bold;
   text-decoration: none;
 }
@@ -2350,7 +2350,7 @@ header .header-top .account:hover::before {
 
 /* Block */
 .info-box {
-  background-color: #0F172A;
+  background-color: #0f172a;
   padding: 20px 40px;
   position: relative;
   top: -30px;
@@ -2379,7 +2379,7 @@ header .header-top .account:hover::before {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #FFD700;
+  color: #ffd700;
   top: 39px;
   left: -64px;
   font-family: "Arial", sans-serif;
@@ -2394,8 +2394,95 @@ header .header-top .account:hover::before {
   display: inline-block;
   width: 48px;
   height: 1px;
-  background-color: #FFD700;
+  background-color: #ffd700;
   margin-right: 10px;
 }
 
-/* Toàn Pro Vip - End Code *//*# sourceMappingURL=style.css.map */
+/* Toàn Pro Vip - End Code */
+/* Minh Pro Vip - Start Code*/
+.services-section {
+  background-color: #0a1d26;
+  color: #fff;
+  width: 100%;
+}
+.services-section .title {
+  width: 600px;
+  margin: 165px auto 130px;
+}
+.services-section .title h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.services-section .title p {
+  font-size: 14px;
+  text-align: center;
+}
+.services-section .group-img {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.services-section .group-img .img {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.services-section .group-img .img1 {
+  grid-area: 1/1/2/5;
+}
+.services-section .group-img .img2 {
+  grid-area: 1/5/2/9;
+}
+.services-section .group-img .img3 {
+  grid-area: 1/9/2/13;
+}
+.services-section .group-img .img4 {
+  grid-area: 2/1/3/4;
+}
+.services-section .group-img .img5 {
+  grid-area: 2/4/3/8;
+}
+.services-section .group-img .img6 {
+  grid-area: 2/8/3/13;
+}
+
+/* // footer */
+footer {
+  background-color: #0a1d26;
+  color: #fff;
+  padding: 214px 0 40px;
+}
+footer .footer_group {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+footer .footer_group p {
+  margin: 20px 0;
+  font-size: 14px;
+}
+footer .footer_group h4 {
+  font-size: 18px;
+  color: #fbd784;
+}
+footer .footer__info {
+  grid-area: 1/2/2/6;
+}
+footer .footer__info .footer_item {
+  padding-top: 106px;
+}
+footer .footer__section--1 {
+  grid-area: 1/8/2/11;
+}
+footer .footer__section--2 {
+  grid-area: 1/11/2/13;
+}
+
+/* Minh Pro Vip - End Code *//*# sourceMappingURL=style.css.map */
