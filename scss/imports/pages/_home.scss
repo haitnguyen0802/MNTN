@@ -236,6 +236,20 @@
             grid-area: 2 / 8 / 3 / 13;
         }
     }
+    @media screen and (max-width: 390px) {
+        .title {
+            width: 100%;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+        .title h3 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .title p {
+            font-size: 12px;
+        }
+    }
 }
 /* // footer */
 footer {
@@ -243,6 +257,8 @@ footer {
     color: #fff;
     padding: 214px 0 40px;
     .footer_group {
+        border-top: 1px solid #23343c;
+        padding-top: 60px;
         p {
             margin: 20px 0;
             font-size: 14px;
@@ -257,18 +273,43 @@ footer {
         grid-column-gap: 20px;
         grid-row-gap: 0px;
     }
-
+    .footer_item {
+        padding-top: 50px;
+        text-align: center;
+        border-top: 1px solid #23343c;
+    }
     .footer__info {
         grid-area: 1 / 2 / 2 / 6;
-        .footer_item {
-            padding-top: 106px;
-        }
     }
     .footer__section--1 {
         grid-area: 1 / 8 / 2 / 11;
     }
     .footer__section--2 {
         grid-area: 1 / 11 / 2 / 13;
+    }
+    @media screen and (max-width: 390px) {
+        footer {
+            padding: 40px 20px;
+        }
+        .footer_group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 30px;
+        }
+        .footer__info,
+        .footer__section--1,
+        .footer__section--2 {
+            grid-area: unset;
+        }
+        .footer__info img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        .footer_item {
+            padding-top: 30px;
+            font-size: 12px;
+        }
     }
 }
 /* Minh Pro Vip - End Code */
