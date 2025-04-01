@@ -4,7 +4,8 @@
   "description": "This is grunt template project for training",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "figma-mcp": "figma-developer-mcp --figma-api-key=figd_nvhc8QNV1WbORJqKZvINuyqrCzNOZI9uIcI5yFuH --stdio"
   },
   "keywords": [
     "task"
@@ -21,6 +22,9 @@
     "load-grunt-tasks": "^5.1.0"
   },
   "dependencies": {
+    "content-type": "^1.0.5",
+    "cursor-talk-to-figma-socket": "^0.0.4",
+    "figma-developer-mcp": "^0.1.12",
     "grunt-template-project": "file:"
   }
 }
