@@ -4,8 +4,7 @@
   "description": "This is grunt template project for training",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "figma-mcp": "figma-developer-mcp --figma-api-key=figd_nvhc8QNV1WbORJqKZvINuyqrCzNOZI9uIcI5yFuH --stdio"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "task"
