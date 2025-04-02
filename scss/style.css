@@ -2149,10 +2149,14 @@ header {
   position: fixed !important;
 }
 header .header-top {
+  height: 76px;
   padding: 0 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: rgba(189, 189, 189, 0.04);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 header .header-top .logo img {
   width: 100%;
@@ -2233,6 +2237,17 @@ header .header-top .account:hover::before {
   z-index: 100;
   position: relative;
 }
+.hero::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(11, 29, 38, 0) 0%, rgb(11, 29, 38) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
 .hero .hero-content {
   height: 100%;
   z-index: 0;
@@ -2270,11 +2285,11 @@ header .header-top .account:hover::before {
 }
 /* Toàn Pro Vip - Start Code*/
 .layout-section {
-  background-color: #0f172a;
+  margin-top: 0px;
   color: white;
-  margin-top: 100px;
   padding: 60px;
   overflow: hidden;
+  background-color: #0a1d26;
   position: relative;
 }
 
@@ -2337,7 +2352,7 @@ header .header-top .account:hover::before {
 
 /* Block */
 .info-box {
-  background-color: #0f172a;
+  background-color: #0a1d26;
   padding: 20px 40px;
   position: relative;
   top: -30px;
@@ -2394,7 +2409,8 @@ header .header-top .account:hover::before {
 }
 .services-section .title {
   width: 600px;
-  margin: 165px auto 130px;
+  padding-top: 120px;
+  margin: 0 auto;
 }
 .services-section .title h3 {
   font-size: 30px;
@@ -2404,6 +2420,7 @@ header .header-top .account:hover::before {
 .services-section .title p {
   font-size: 14px;
   text-align: center;
+  margin-bottom: 58px;
 }
 .services-section .group-img {
   display: grid;
@@ -2437,20 +2454,6 @@ header .header-top .account:hover::before {
 .services-section .group-img .img6 {
   grid-area: 2/8/3/13;
 }
-@media screen and (max-width: 390px) {
-  .services-section .title {
-    width: 100%;
-    margin: 80px auto;
-    padding: 0 20px;
-  }
-  .services-section .title h3 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  .services-section .title p {
-    font-size: 12px;
-  }
-}
 
 /* // footer */
 footer {
@@ -2459,8 +2462,6 @@ footer {
   padding: 214px 0 40px;
 }
 footer .footer_group {
-  border-top: 1px solid #23343c;
-  padding-top: 60px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
@@ -2475,13 +2476,11 @@ footer .footer_group h4 {
   font-size: 18px;
   color: #fbd784;
 }
-footer .footer_item {
-  padding-top: 50px;
-  text-align: center;
-  border-top: 1px solid #23343c;
-}
 footer .footer__info {
   grid-area: 1/2/2/6;
+}
+footer .footer__info .footer_item {
+  padding-top: 106px;
 }
 footer .footer__section--1 {
   grid-area: 1/8/2/11;
@@ -2489,32 +2488,35 @@ footer .footer__section--1 {
 footer .footer__section--2 {
   grid-area: 1/11/2/13;
 }
-@media screen and (max-width: 390px) {
-  footer footer {
-    padding: 40px 20px;
-  }
-  footer .footer_group {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 30px;
-  }
-  footer .footer__info,
-  footer .footer__section--1,
-  footer .footer__section--2 {
-    grid-area: unset;
-  }
-  footer .footer__info img {
-    max-width: 150px;
-    margin-bottom: 10px;
-  }
-  footer .footer_item {
-    padding-top: 30px;
-    font-size: 12px;
-  }
-}
 
 /* Minh Pro Vip - End Code */
+/* Thanh Tuan Pro Vip - Start Code */
+/* Số 02 */
+.info-box__background-number-02 {
+  font-size: 158px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: 10px;
+  top: 40px;
+}
+
+/*  Content */
+.info-box__subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffd700;
+  top: 39px;
+  left: -64px;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/* Thanh Tuan Pro Vip - End Code */
 .about {
   font-family: "DM Sans", sans-serif;
   color: #FFFFFF;
