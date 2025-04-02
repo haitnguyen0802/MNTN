@@ -1,16 +1,19 @@
 // css header
 header {
-    position: fixed;
-    top: 64px;
     left: 0;
     right: 0;
     z-index: 1000;
+    position: fixed !important;
 
     .header-top {
+        height: 76px;
         padding: 0 120px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: rgba(189, 189, 189, 0.04);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
 
         .logo {
 
