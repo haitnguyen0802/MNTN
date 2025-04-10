@@ -1,0 +1,151 @@
+// Nam page styles
+.about {
+  // Fixed header styles
+  &__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(11, 29, 38, 0.01);
+    transition: all 0.3s ease;
+    
+    &--scrolled {
+      background: rgba(11, 29, 38, 0.8);
+      backdrop-filter: blur(15px);
+    }
+  }
+  
+  &__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  // Fixed navigation styles
+  &__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+    &-list {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    &-item {
+      margin: 0;
+    }
+    
+    @media (max-width: 768px) {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      height: 100vh;
+      background-color: #0B1D26;
+      padding: 80px 20px 20px;
+      display: none;
+      z-index: 1000;
+      transition: right 0.3s ease;
+      
+      &--active {
+        display: block;
+        right: 0;
+      }
+      
+      &-list {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+      
+      &-item {
+        margin: 0 0 20px 0;
+      }
+      
+      &-link {
+        font-size: 18px;
+        padding: 10px 0;
+        display: block;
+      }
+    }
+  }
+  
+  &__menu-toggle {
+    display: none;
+    position: relative;
+    z-index: 1001;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    
+    @media (max-width: 768px) {
+      display: block;
+    }
+    
+    span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+      
+      &:nth-child(1) {
+        top: 0px;
+      }
+      
+      &:nth-child(2) {
+        top: 9px;
+      }
+      
+      &:nth-child(3) {
+        top: 18px;
+      }
+    }
+    
+    &--active {
+      span {
+        &:nth-child(1) {
+          top: 9px;
+          transform: rotate(135deg);
+        }
+        
+        &:nth-child(2) {
+          opacity: 0;
+          left: -60px;
+        }
+        
+        &:nth-child(3) {
+          top: 9px;
+          transform: rotate(-135deg);
+        }
+      }
+    }
+  }
+}
+
+// Menu overlay
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  
+  &--active {
+    display: block;
+  }
+} 
