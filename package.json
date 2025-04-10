@@ -21,6 +21,9 @@
     "load-grunt-tasks": "^5.1.0"
   },
   "dependencies": {
+    "content-type": "^1.0.5",
+    "cursor-talk-to-figma-socket": "^0.0.4",
+    "figma-developer-mcp": "^0.1.12",
     "grunt-template-project": "file:"
   }
 }
