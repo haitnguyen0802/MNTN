@@ -1,0 +1,184 @@
+// Bac page styles
+.about {
+  // Mobile menu fix
+  &__nav {
+    @media (max-width: 768px) {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      height: 100vh;
+      background-color: #0B1D26;
+      padding: 80px 20px 20px;
+      z-index: 1000;
+      transition: right 0.3s ease;
+
+      &--active {
+        display: block;
+        right: 0;
+      }
+    }
+  }
+
+  &__nav-list {
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__nav-item {
+    @media (max-width: 768px) {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__nav-link {
+    @media (max-width: 768px) {
+      font-size: 18px;
+      padding: 10px 0;
+      display: block;
+    }
+  }
+
+  &__menu-toggle {
+    @media (max-width: 768px) {
+      display: block;
+      position: relative;
+      z-index: 1001;
+    }
+  }
+
+  // Hero section responsive
+  &__hero-wrapper {
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__hero-content {
+    @media (max-width: 768px) {
+      order: 2;
+    }
+  }
+
+  &__hero-image {
+    @media (max-width: 768px) {
+      order: 1;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 576px) {
+      height: 200px;
+    }
+  }
+
+  &__hero-img {
+    @media (max-width: 576px) {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  &__hero-button {
+    @media (max-width: 576px) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  // Features section responsive
+  &__features-grid {
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Info section responsive
+  &__info-wrapper {
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__info-content {
+    @media (max-width: 768px) {
+      order: 2;
+    }
+  }
+
+  &__info-image {
+    @media (max-width: 768px) {
+      order: 1;
+      margin-bottom: 30px;
+    }
+  }
+
+  // Team section responsive
+  &__team-grid {
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Newsletter section responsive
+  &__newsletter-form {
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+  }
+
+  &__newsletter-input {
+    @media (max-width: 576px) {
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  &__newsletter-button {
+    @media (max-width: 576px) {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  // Footer responsive
+  &__footer-wrapper {
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Add mobile menu overlay
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+
+  &--active {
+    display: block;
+  }
+} 

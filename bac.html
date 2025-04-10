@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>MNTN - Về chúng tôi</title>
+    <!-- <link rel="stylesheet" href="./dest/style.min.css"> -->
+    <link rel="stylesheet" href="./scss/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="about">
+        <!-- Header -->
+        <header class="about__header" id="aboutHeader">
+            <div class="container">
+                <div class="about__header-wrapper">
+                    <a href="index.html" class="about__logo">MNTN</a>
+                    <nav class="about__nav">
+                        <ul class="about__nav-list">
+                            <li class="about__nav-item">
+                                <a href="#" class="about__nav-link">Thiết bị</a>
+                            </li>
+                            <li class="about__nav-item">
+                                <a href="about.html" class="about__nav-link">Về chúng tôi</a>
+                            </li>
+                            <li class="about__nav-item">
+                                <a href="#" class="about__nav-link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="about__account">
+                        <a href="#" class="about__account-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18 20C18 17.7909 15.3137 16 12 16C8.68629 16 6 17.7909 6 20" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Tài khoản
+                        </a>
+                    </div>
+                    <button class="about__menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="menu-overlay"></div>
+
+        <!-- Hero Section -->
+        <section class="about__hero">
+            <div class="container">
+                <div class="about__hero-wrapper">
+                    <div class="about__hero-content">
+                        <div class="about__hero-breadcrumb">
+                            <a href="index.html" class="about__hero-breadcrumb-link">Trang chủ</a>
+                            <span class="about__hero-breadcrumb-separator">/</span>
+                            <span class="about__hero-breadcrumb-current">Về chúng tôi</span>
+                        </div>
+                        <h1 class="about__hero-title">Bạn có biết cảnh đẹp nào ở miền Bắc Việt Nam không?</h1>
+                        <p class="about__hero-text">Vịnh Hạ Long, nằm ở tỉnh Quảng Ninh, Việt Nam, là một kỳ quan thiên
+                            nhiên ngoạn mục và là Di sản Thế giới của UNESCO. Nổi tiếng với làn nước ngọc lục bảo và
+                            hàng ngàn hòn đảo đá vôi cao chót vót phủ đầy cây xanh tươi tốt, vịnh tạo nên một cảnh quan
+                            kỳ diệu và đẹp như tranh vẽ. Du khách có thể khám phá các hang động bí ẩn, chẳng hạn như
+                            Hang Sửng Sốt và Động Thiên Cung, chèo thuyền kayak qua vùng nước yên tĩnh hoặc đi du thuyền
+                            để chiêm ngưỡng cảnh quan tuyệt đẹp. Vịnh Hạ Long không chỉ là thiên đường cho những người
+                            yêu thiên nhiên mà còn là nơi giàu lịch sử và truyền thuyết, khiến nơi đây trở thành điểm
+                            đến không thể bỏ qua đối với du khách trên toàn thế giới.</p>
+                        <a href="#" class="about__hero-button">Khám phá câu chuyện của chúng tôi</a>
+                    </div>
+                    <div class="about__hero-image">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Mountain landscape"
+                            class="about__hero-img">
+                        <div class="about__hero-controls">
+                            <button class="about__hero-control about__hero-control--prev">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 12L6 8L10 4" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="about__hero-control about__hero-control--next">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 12L10 8L6 4" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="about__features">
+            <div class="container">
+                <h2 class="about__features-title">Tại sao nên làm việc với chúng tôi</h2>
+                <div class="about__features-grid">
+                    <div class="about__feature-card">
+                        <span class="about__feature-tag">Kinh nghiệm</span>
+                        <h3 class="about__feature-title">Hơn 20 năm kinh nghiệm du lịch</h3>
+                        <p class="about__feature-text">Với hơn hai thập kỷ trong ngành du lịch mạo hiểm, chúng tôi đã
+                            xây dựng mối quan hệ và chuyên môn đảm bảo bạn có được những trải nghiệm tốt nhất có thể.
+                        </p>
+                    </div>
+                    <div class="about__feature-card">
+                        <span class="about__feature-tag">Cộng đồng</span>
+                        <h3 class="about__feature-title">Cộng đồng du lịch đam mê</h3>
+                        <p class="about__feature-text">Tham gia cộng đồng những người du lịch cùng chí hướng chia sẻ
+                            mẹo, câu chuyện và kinh nghiệm để truyền cảm hứng cho chuyến phiêu lưu tiếp theo của bạn.
+                        </p>
+                    </div>
+                    <div class="about__feature-card">
+                        <span class="about__feature-tag">Giá trị</span>
+                        <h3 class="about__feature-title">Giá trị & Chất lượng vượt trội</h3>
+                        <p class="about__feature-text">Chúng tôi đàm phán mức giá tốt nhất với các đối tác của mình đồng
+                            thời duy trì các tiêu chuẩn cao nhất về chỗ ở và trải nghiệm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="about__info">
+            <div class="container">
+                <div class="about__info-wrapper">
+                    <div class="about__info-image">
+                        <img src="https://images.unsplash.com/photo-1555921015-5532091f6026?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Venice Grand Canal" class="about__info-img">
+                    </div>
+                    <div class="about__info-content">
+                        <span class="about__info-label">Triết lý của chúng tôi</span>
+                        <h2 class="about__info-title">Kết nối mọi người với kỳ quan thiên nhiên</h2>
+                        <p class="about__info-text">Chúng tôi tin rằng việc khám phá thế giới tự nhiên tạo ra những kết
+                            nối sâu sắc - cả với thiên nhiên và với nhau. Mục tiêu của chúng tôi là làm cho những trải
+                            nghiệm biến đổi này có thể tiếp cận được với mọi người, bất kể kinh nghiệm du lịch của họ.
+                        </p>
+                        <p class="about__info-text">Bằng cách hợp tác với các hướng dẫn viên địa phương, cộng đồng và
+                            các sáng kiến du lịch bền vững, chúng tôi đảm bảo rằng các chuyến phiêu lưu của chúng tôi
+                            mang lại lợi ích cho cả khách du lịch và các điểm đến mà họ ghé thăm.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="about__team">
+            <div class="container">
+                <h2 class="about__team-title">Đội ngũ của chúng tôi</h2>
+                <div class="about__team-grid">
+                    <div class="about__team-card">
+                        <div class="about__team-avatar">
+                            <img src="./img/main/myPicture.jpg" alt="Sarah Johnson" class="about__team-img" />
+                        </div>
+                        <h3 class="about__team-name">Danh nguyễn Chí Toàn</h3>
+                        <p class="about__team-position">thành viên nhóm</p>
+                    </div>
+                    <div class="about__team-card">
+                        <div class="about__team-avatar">
+                            <img src="./img/main/thanh-tuan.jpg" alt="Michael Chen" class="about__team-img" />
+                        </div>
+                        <h3 class="about__team-name">Nguyễn Thanh Tuấn</h3>
+                        <p class="about__team-position">Thành viên nhóm</p>
+                    </div>
+                    <div class="about__team-card">
+                        <div class="about__team-avatar">
+                            <img src="img/main/tvan.jpg" alt="Elena Rodriguez" class="about__team-img">
+                        </div>
+                        <h3 class="about__team-name">Trần Thị Tường Vân</h3>
+                        <p class="about__team-position">Thành viên nhóm</p>
+                    </div>
+                    <div class="about__team-card">
+                        <div class="about__team-avatar">
+                            <img src="img/main/voanhphi.png" style="transform: scale(1.5);
+                                transform-origin: top;" alt="Vo Anh Phi" class="about__team-img">
+                        </div>
+                        <h3 class="about__team-name">Võ Đoàn Anh Phi</h3>
+                        <p class="about__team-position">Chăm sóc khách hàng</p>
+                    </div>
+                    <div class="about__team-card">
+                        <div class="about__team-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson"
+                                class="about__team-img">
+                        </div>
+                        <h3 class="about__team-name">Lê Vũ Minh</h3>
+                        <p class="about__team-position">Người sáng lập & Giám đốc điều hành</p>
+                    </div>
+                    <div class="about__team-card">
+                        <div class="about__team-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen"
+                                class="about__team-img">
+                        </div>
+                        <h3 class="about__team-name">Nguyễn Hồng Thái</h3>
+                        <p class="about__team-position">Trưởng bộ phận phiêu lưu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="about__newsletter">
+            <div class="container">
+                <div class="about__newsletter-wrapper">
+                    <h2 class="about__newsletter-title">Tham gia bản tin của chúng tôi</h2>
+                    <p class="about__newsletter-text">Luôn cập nhật các mẹo du lịch mới nhất, hướng dẫn điểm đến và ưu
+                        đãi độc quyền trực tiếp trong hộp thư đến của bạn.</p>
+                    <form class="about__newsletter-form">
+                        <input type="email" placeholder="Địa chỉ email của bạn" class="about__newsletter-input">
+                        <button type="submit" class="about__newsletter-button">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="about__footer">
+            <div class="container">
+                <div class="about__footer-wrapper">
+                    <div class="about__footer-main">
+                        <a href="index.html" class="about__footer-logo">MNTN</a>
+                        <p class="about__footer-text">Tạo ra những trải nghiệm du lịch khó quên từ năm 2003. Hãy tham
+                            gia cùng chúng tôi trong một cuộc phiêu lưu của cả cuộc đời.</p>
+                    </div>
+                    <div class="about__footer-columns">
+                        <div class="about__footer-column">
+                            <h3 class="about__footer-title">Xem thêm về MNTN</h3>
+                            <ul class="about__footer-list">
+                                <li class="about__footer-item">
+                                    <a href="#" class="about__footer-link">Về chúng tôi</a>
+                                </li>
+                                <li class="about__footer-item">
+                                    <a href="#" class="about__footer-link">Điểm đến</a>
+                                </li>
+                                <li class="about__footer-item">
+                                    <a href="#" class="about__footer-link">Tuyển dụng</a>
+                                </li>
+                                <li class="about__footer-item">
+                                    <a href="#" class="about__footer-link">Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about__footer-column">
+                        <h3 class="about__footer-title">Hỗ trợ</h3>
+                        <ul class="about__footer-list">
+                            <li class="about__footer-item">
+                                <a href="#" class="about__footer-link">Liên hệ chúng tôi</a>
+                            </li>
+                            <li class="about__footer-item">
+                                <a href="#" class="about__footer-link">Câu hỏi thường gặp</a>
+                            </li>
+                            <li class="about__footer-item">
+                                <a href="#" class="about__footer-link">Chính sách bảo mật</a>
+                            </li>
+                            <li class="about__footer-item">
+                                <a href="#" class="about__footer-link">Điều khoản dịch vụ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__footer-bottom">
+                    <p class="about__footer-copyright">© 2023 MNTN. Đã đăng ký Bản quyền.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.about__menu-toggle').addEventListener('click', function () {
+            document.querySelector('.about__nav').classList.toggle('about__nav--active');
+            this.classList.toggle('about__menu-toggle--active');
+            document.querySelector('.menu-overlay').classList.toggle('menu-overlay--active');
+
+            // Toggle body scroll when menu is open
+            if (document.querySelector('.about__nav').classList.contains('about__nav--active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.about__nav-link').forEach(link => {
+            link.addEventListener('click', function () {
+                document.querySelector('.about__nav').classList.remove('about__nav--active');
+                document.querySelector('.about__menu-toggle').classList.remove('about__menu-toggle--active');
+                document.querySelector('.menu-overlay').classList.remove('menu-overlay--active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.querySelector('.menu-overlay').addEventListener('click', function () {
+            document.querySelector('.about__nav').classList.remove('about__nav--active');
+            document.querySelector('.about__menu-toggle').classList.remove('about__menu-toggle--active');
+            this.classList.remove('menu-overlay--active');
+            document.body.style.overflow = '';
+        });
+
+        // Header scroll effect
+        const header = document.getElementById('aboutHeader');
+        const scrollThreshold = 50;
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > scrollThreshold) {
+                header.classList.add('about__header--scrolled');
+            } else {
+                header.classList.remove('about__header--scrolled');
+            }
+        });
+
+        // Hero slider functionality
+        const heroImages = [
+            'https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1740232188199-223ee2d791c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            'https://images.unsplash.com/photo-1706092507427-2e85b8d49d9a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        ];
+        let currentImageIndex = 0;
+        const heroImg = document.querySelector('.about__hero-img');
+
+        document.querySelector('.about__hero-control--prev').addEventListener('click', function () {
+            currentImageIndex = (currentImageIndex - 1 + heroImages.length) % heroImages.length;
+            fadeImage(heroImg, heroImages[currentImageIndex]);
+        });
+
+        document.querySelector('.about__hero-control--next').addEventListener('click', function () {
+            currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+            fadeImage(heroImg, heroImages[currentImageIndex]);
+        });
+
+        function fadeImage(imgElement, newSrc) {
+            imgElement.style.opacity = '0';
+            setTimeout(() => {
+                imgElement.src = newSrc;
+                imgElement.style.opacity = '1';
+            }, 300);
+        }
+
+        // Add fade transition to hero image
+        if (heroImg) {
+            heroImg.style.transition = 'opacity 0.3s ease';
+        }
+
+        // Add hover effect to feature cards
+        document.querySelectorAll('.about__feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px)';
+                this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.2)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
