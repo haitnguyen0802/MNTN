@@ -192,7 +192,7 @@ abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -291,9 +291,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -301,9 +301,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -312,9 +312,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -358,8 +358,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -367,8 +367,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -376,7 +376,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -384,7 +384,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -748,7 +748,7 @@ article .video video {
 }
 
 .no-gap > .col,
-.no-gap > [class*=col-] {
+.no-gap > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -2162,7 +2162,7 @@ header .header-top .logo img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 header .header-top .menu ul {
   display: flex;
@@ -2203,7 +2203,7 @@ header .header-top .account img {
   width: 24px;
   height: 24px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 header .header-top .account a {
   color: #ffffff;
@@ -2242,7 +2242,11 @@ header .header-top .account:hover::before {
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(11, 29, 38, 0) 0%, rgb(11, 29, 38) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(11, 29, 38, 0) 0%,
+    rgb(11, 29, 38) 100%
+  );
   position: absolute;
   top: 100px;
   left: 0;
@@ -2420,7 +2424,11 @@ header .header-top .account:hover::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(10, 29, 38, 0.9) 0%, rgb(10, 29, 38) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 29, 38, 0.9) 0%,
+    rgb(10, 29, 38) 100%
+  );
   z-index: -1;
 }
 .introduction .container {
@@ -2621,7 +2629,7 @@ header .header-top .account:hover::before {
   width: 450px;
   height: 600px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -2709,7 +2717,7 @@ header .header-top .account:hover::before {
   width: 100%;
   height: 220px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px;
 }
 .services-section .group-img .img1 {
@@ -2795,8 +2803,8 @@ footer .footer__section--2 {
 /* Thanh Tuan Pro Vip - End Code */
 .about {
   font-family: "DM Sans", sans-serif;
-  color: #FFFFFF;
-  background-color: #0B1D26;
+  color: #ffffff;
+  background-color: #0b1d26;
   overflow-x: hidden;
   position: relative;
 }
@@ -2814,26 +2822,26 @@ footer .footer__section--2 {
   backdrop-filter: blur(40px) !important;
   -webkit-backdrop-filter: blur(40px) !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .about__header--scrolled .about__logo,
 .about__header--scrolled .about__nav-link,
 .about__header--scrolled .about__account-link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .about__header--scrolled .about__menu-toggle span {
-  background: #F59E0B;
+  background: #f59e0b;
 }
 .about__header--scrolled .about__account-link svg path {
-  stroke: #FFFFFF;
+  stroke: #ffffff;
 }
 .about__header--scrolled .about__nav-link::after {
-  background-color: #FBD784;
+  background-color: #fbd784;
 }
 .about__header--scrolled .about__nav-link:hover,
 .about__header--scrolled .about__logo:hover,
 .about__header--scrolled .about__account-link:hover {
-  color: #FBD784;
+  color: #fbd784;
 }
 @media (max-width: 768px) {
   .about__header {
@@ -2849,14 +2857,14 @@ footer .footer__section--2 {
 .about__logo {
   font-size: 32px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   position: relative;
   z-index: 101;
   transition: transform 0.3s, color 0.3s;
 }
 .about__logo:hover {
-  color: #FBD784;
+  color: #fbd784;
   transform: scale(1.05);
 }
 @media (max-width: 768px) {
@@ -2890,7 +2898,7 @@ footer .footer__section--2 {
     backdrop-filter: blur(40px) !important;
     -webkit-backdrop-filter: blur(40px) !important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    color: #FFFFFF;
+    color: #ffffff;
   }
   .about__nav--active {
     display: flex;
@@ -2932,7 +2940,7 @@ footer .footer__section--2 {
   }
 }
 .about__nav-link {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   position: relative;
@@ -2948,7 +2956,7 @@ footer .footer__section--2 {
   }
 }
 .about__nav-link:hover {
-  color: #FBD784;
+  color: #fbd784;
 }
 .about__nav-link::after {
   content: "";
@@ -2957,7 +2965,7 @@ footer .footer__section--2 {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #FBD784;
+  background-color: #fbd784;
   transition: width 0.3s ease;
 }
 .about__nav-link:hover::after {
@@ -2972,7 +2980,7 @@ footer .footer__section--2 {
 .about__account-link {
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   transition: transform 0.3s, color 0.3s;
@@ -2985,14 +2993,14 @@ footer .footer__section--2 {
   transition: stroke 0.3s;
 }
 .about__account-link:hover {
-  color: #FBD784;
+  color: #fbd784;
   transform: translateY(-2px);
 }
 .about__account-link:hover svg {
   transform: scale(1.1);
 }
 .about__account-link:hover svg path {
-  stroke: #FBD784;
+  stroke: #fbd784;
 }
 .about__menu-toggle {
   display: none;
@@ -3009,7 +3017,7 @@ footer .footer__section--2 {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -3081,20 +3089,20 @@ footer .footer__section--2 {
   font-size: 14px;
 }
 .about__hero-breadcrumb-link {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 .about__hero-breadcrumb-link:hover {
-  color: #FBD784;
+  color: #fbd784;
   text-decoration: underline;
 }
 .about__hero-breadcrumb-separator {
   margin: 0 5px;
-  color: #6B7280;
+  color: #6b7280;
 }
 .about__hero-breadcrumb-current {
-  color: #6B7280;
+  color: #6b7280;
 }
 .about__hero-title {
   font-size: 36px;
@@ -3120,7 +3128,7 @@ footer .footer__section--2 {
 .about__hero-text {
   font-size: 16px;
   line-height: 1.6;
-  color: #6B7280;
+  color: #6b7280;
   margin-bottom: 30px;
 }
 @media (max-width: 576px) {
@@ -3130,8 +3138,8 @@ footer .footer__section--2 {
 }
 .about__hero-button {
   display: inline-block;
-  background-color: #FBD784;
-  color: #0B1D26;
+  background-color: #fbd784;
+  color: #0b1d26;
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 100px;
@@ -3211,10 +3219,10 @@ footer .footer__section--2 {
   transition: transform 0.3s;
 }
 .about__hero-control:hover {
-  background-color: #FBD784;
+  background-color: #fbd784;
 }
 .about__hero-control:hover svg path {
-  stroke: #0B1D26;
+  stroke: #0b1d26;
 }
 .about__hero-control:active {
   transform: scale(0.95);
@@ -3255,7 +3263,7 @@ footer .footer__section--2 {
   bottom: -10px;
   width: 80px;
   height: 3px;
-  background-color: #FBD784;
+  background-color: #fbd784;
 }
 @media (max-width: 768px) {
   .about__features-title {
@@ -3305,7 +3313,7 @@ footer .footer__section--2 {
 .about__feature-tag {
   display: inline-block;
   background-color: rgba(141, 84, 191, 0.3);
-  color: #8D54BF;
+  color: #8d54bf;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 12px;
@@ -3323,7 +3331,7 @@ footer .footer__section--2 {
   transition: color 0.3s;
 }
 .about__feature-card:hover .about__feature-title {
-  color: #FBD784;
+  color: #fbd784;
 }
 @media (max-width: 768px) {
   .about__feature-title {
@@ -3333,7 +3341,7 @@ footer .footer__section--2 {
 .about__feature-text {
   font-size: 14px;
   line-height: 1.6;
-  color: #6B7280;
+  color: #6b7280;
   transition: color 0.3s;
 }
 .about__feature-card:hover .about__feature-text {
@@ -3342,6 +3350,7 @@ footer .footer__section--2 {
 .about__info {
   padding: 80px 0;
 }
+
 @media (max-width: 768px) {
   .about__info {
     padding: 60px 0;
@@ -3358,6 +3367,7 @@ footer .footer__section--2 {
   gap: 60px;
   align-items: center;
 }
+
 @media (max-width: 992px) {
   .about__info-wrapper {
     gap: 40px;
@@ -3400,7 +3410,7 @@ footer .footer__section--2 {
 }
 .about__info-label {
   display: inline-block;
-  color: #FBD784;
+  color: #fbd784;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -3419,7 +3429,7 @@ footer .footer__section--2 {
   left: -15px;
   width: 0;
   height: 2px;
-  background-color: #FBD784;
+  background-color: #fbd784;
   transform: translateY(-50%);
   transition: width 0.3s;
   opacity: 0;
@@ -3443,7 +3453,7 @@ footer .footer__section--2 {
   bottom: -10px;
   width: 80px;
   height: 3px;
-  background-color: #FBD784;
+  background-color: #fbd784;
   transform: scaleX(0.3);
   transform-origin: left;
   transition: transform 0.3s;
@@ -3464,12 +3474,12 @@ footer .footer__section--2 {
 .about__info-text {
   font-size: 16px;
   line-height: 1.6;
-  color: #6B7280;
+  color: #6b7280;
   margin-bottom: 15px;
   transition: color 0.3s;
 }
 .about__info-text:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media (max-width: 576px) {
   .about__info-text {
@@ -3503,7 +3513,7 @@ footer .footer__section--2 {
   bottom: -10px;
   width: 80px;
   height: 3px;
-  background-color: #FBD784;
+  background-color: #fbd784;
 }
 @media (max-width: 768px) {
   .about__team-title {
@@ -3559,11 +3569,11 @@ footer .footer__section--2 {
   transition: border-color 0.3s, transform 0.3s;
 }
 .about__team-card:hover .about__team-avatar {
-  border-color: #FBD784;
+  border-color: #fbd784;
   transform: scale(1.1);
 }
 .about__team-avatar--empty {
-  background-color: #505A6B;
+  background-color: #505a6b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3579,7 +3589,7 @@ footer .footer__section--2 {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: transform 0.5s;
 }
 .about__team-card:hover .about__team-img {
@@ -3589,7 +3599,7 @@ footer .footer__section--2 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #6B7280;
+  background-color: #6b7280;
 }
 .about__team-name {
   font-size: 18px;
@@ -3599,7 +3609,7 @@ footer .footer__section--2 {
   transition: color 0.3s;
 }
 .about__team-card:hover .about__team-name {
-  color: #FBD784;
+  color: #fbd784;
 }
 @media (max-width: 768px) {
   .about__team-name {
@@ -3608,7 +3618,7 @@ footer .footer__section--2 {
 }
 .about__team-position {
   font-size: 14px;
-  color: #6B7280;
+  color: #6b7280;
   text-transform: uppercase;
   transition: color 0.3s;
 }
@@ -3667,7 +3677,7 @@ footer .footer__section--2 {
 .about__newsletter-text {
   font-size: 16px;
   line-height: 1.6;
-  color: #6B7280;
+  color: #6b7280;
   max-width: 500px;
   margin: 0 auto 30px;
 }
@@ -3690,23 +3700,23 @@ footer .footer__section--2 {
 .about__newsletter-input {
   flex: 1;
   padding: 15px 20px;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
   border-radius: 100px 0 0 100px;
   background-color: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 .about__newsletter-input:focus {
-  border-color: #FBD784;
+  border-color: #fbd784;
   box-shadow: 0 0 0 3px rgba(251, 215, 132, 0.2);
 }
 .about__newsletter-input::-moz-placeholder {
-  color: #6B7280;
+  color: #6b7280;
 }
 .about__newsletter-input::placeholder {
-  color: #6B7280;
+  color: #6b7280;
 }
 @media (max-width: 576px) {
   .about__newsletter-input {
@@ -3716,8 +3726,8 @@ footer .footer__section--2 {
   }
 }
 .about__newsletter-button {
-  background-color: #FBD784;
-  color: #0B1D26;
+  background-color: #fbd784;
+  color: #0b1d26;
   font-weight: 700;
   padding: 15px 30px;
   border: none;
@@ -3777,13 +3787,13 @@ footer .footer__section--2 {
   display: inline-block;
   font-size: 32px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   margin-bottom: 20px;
   transition: color 0.3s, transform 0.3s;
 }
 .about__footer-logo:hover {
-  color: #FBD784;
+  color: #fbd784;
   transform: scale(1.05);
 }
 @media (max-width: 768px) {
@@ -3795,7 +3805,7 @@ footer .footer__section--2 {
 .about__footer-text {
   font-size: 16px;
   line-height: 1.6;
-  color: #6B7280;
+  color: #6b7280;
   max-width: 300px;
 }
 @media (max-width: 576px) {
@@ -3838,7 +3848,7 @@ footer .footer__section--2 {
   bottom: -5px;
   width: 40px;
   height: 2px;
-  background-color: #FBD784;
+  background-color: #fbd784;
 }
 @media (max-width: 768px) {
   .about__footer-title {
@@ -3858,7 +3868,7 @@ footer .footer__section--2 {
   margin-bottom: 0;
 }
 .about__footer-link {
-  color: #6B7280;
+  color: #6b7280;
   text-decoration: none;
   transition: color 0.3s, transform 0.3s;
   display: inline-block;
@@ -3873,7 +3883,7 @@ footer .footer__section--2 {
   transition: opacity 0.3s, transform 0.3s;
 }
 .about__footer-link:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   transform: translateX(10px);
 }
 .about__footer-link:hover::before {
@@ -3886,7 +3896,7 @@ footer .footer__section--2 {
 }
 .about__footer-copyright {
   font-size: 14px;
-  color: #6B7280;
+  color: #6b7280;
   text-align: center;
   transition: color 0.3s;
 }
@@ -3933,7 +3943,7 @@ footer .footer__section--2 {
 .about__header--scrolled {
   background: rgba(11, 29, 38, 0.8);
   -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 .about__header-wrapper {
   display: flex;
@@ -3963,7 +3973,7 @@ footer .footer__section--2 {
     right: -100%;
     width: 80%;
     height: 100vh;
-    background-color: #0B1D26;
+    background-color: #0b1d26;
     padding: 80px 20px 20px;
     z-index: 1000;
     transition: right 0.3s ease;
@@ -4057,7 +4067,7 @@ footer .footer__section--2 {
 @media (max-width: 576px) {
   .about__hero-img {
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 100%;
   }
 }
@@ -4147,4 +4157,4 @@ footer .footer__section--2 {
 }
 .menu-overlay--active {
   display: block;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
